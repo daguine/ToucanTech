@@ -18,7 +18,6 @@ class CreateSchoolsTable extends Migration
             $table->string('name')->unique()->index();
             $table->longtext('description')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
