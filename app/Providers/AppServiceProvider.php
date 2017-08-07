@@ -7,6 +7,7 @@ use ToucanTech\Repositories\UserRepository;
 use ToucanTech\Repositories\RoleRepository;
 use ToucanTech\Repositories\SchoolRepository;
 use ToucanTech\Repositories\PhotoRepository;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
