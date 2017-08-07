@@ -4,7 +4,6 @@ namespace ToucanTech;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use ToucanTech\Model\School;
 use ToucanTech\Model\Role;
 use ToucanTech\Model\Photo;
@@ -12,9 +11,7 @@ use ToucanTech\Model\Photo;
 class User extends Authenticatable
 {
     use Notifiable;
-    use SoftDeletes;
     
-    protected $dates = ['deleted_at'];
 
     protected $fillable = [
         'name', 'email', 'password',
