@@ -115,7 +115,7 @@ class UserController extends Controller {
     public function destroy($id) {
         $this->userRepository->delete($id);
         Session::flash('success', trans('message.delete_user'));
-        return $this->index();
+        return redirect('admin/user');
     }
 
     
