@@ -37,6 +37,7 @@ class SchoolRepository implements RepositoryInterface{
     }
 
     public function create(array $attributes) {
+        $this->model = new School();
         return $this->model->create($attributes);
     }
 
