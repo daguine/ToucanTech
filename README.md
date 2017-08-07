@@ -14,6 +14,12 @@ Please follow this command:
 
 #php artisan db:seed.
 
+#php artisan key:generate
+
+#php artisan config:clear
+
+login access
+
 username:admin@yahoo.co.uk
 
 password:123456
