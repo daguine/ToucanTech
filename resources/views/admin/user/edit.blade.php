@@ -26,7 +26,7 @@
         <div class="form-group">
             {!! Form::label(trans('file.school'),trans('file.school').':')!!}
             {!!Form::select(
-            'schools',$schools,null,
+            'schools[]',$schools,null,
             ['class'=>'form-control input-lg','required'=>'required','multiple'=>'multiple']
             )!!}
         </div>
